@@ -15,8 +15,8 @@ pre-commit install
 
 # 2. 새 연습 프로젝트 생성  
 chmod +x scripts/new_project.sh (처음 한번 실행)  
-mkdir projects  
-./scripts/new_project.sh 'test-proj' (예시)  
+mkdir projects (처음 한번 실행)
+./scripts/new_project.sh 'test-proj' (예시 - python-playground 루트에서 실행)  
 
 ---
 
@@ -29,6 +29,7 @@ cd projects/test-proj
 python -m venv .venv  
 source .venv/Scripts/activate  
 pip install -r ../../dev-requirements.txt  
+python main.py
 
 ---
 
